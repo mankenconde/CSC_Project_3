@@ -5,6 +5,7 @@ jQuery(document).ready(function(){
         var convRate2=result.inchesInCm;
     
         $('#convert').on('click',function(e){
+            $('#answer').html('loading...');
             e.preventDefault();
             var input=$('#input').val();
             var answer=input*convRate;
@@ -12,6 +13,7 @@ jQuery(document).ready(function(){
         });
 
         $('#convert2').on('click',function(e2){
+            $('#answer2').html('loading...');
             e2.preventDefault();
             var input2=$('#input2').val();
             var answer2=input2*convRate2;
