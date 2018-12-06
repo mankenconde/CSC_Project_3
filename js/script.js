@@ -9,7 +9,7 @@ jQuery(document).ready(function(){
             e.preventDefault();
             var input=$('#input').val();
             var answer=input*convRate;
-            $('#answer').html(answer);
+            $('#answer').html('Result = ' + answer + 'cm');
         });
 
         $('#convert2').on('click',function(e2){
@@ -17,7 +17,7 @@ jQuery(document).ready(function(){
             e2.preventDefault();
             var input2=$('#input2').val();
             var answer2=input2*convRate2;
-            $('#answer2').html(answer2);
+            $('#answer2').html('Result = '  + answer2 + 'in');
         });
 
     });
